@@ -1,35 +1,76 @@
+body {
+    background-image: url(https://www.ecopetit.cat/wpic/mpic/14-140944_pepe-the-frog-wallpaper-4k.jpg);
+}
 .numPad{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 248px;
-    
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    border: solid grey 5px;;
+           
 }
 
 .numberButton {
-    background-color: darkgray;
+    background-color: #DDDDDD;
     width: 60px;
     height: 60px;
     border: solid black 1px;
+    transition: 0.8s all;
     
+}
+.numberButton:hover {
+    background-color: #F012BE;
+    width: 60px;
+    height: 60px;
+    border: solid black 1px;
+    transition: 0.6s all;    
+}
+.numberButton:onclick {
+    background-color: #39CCCC;
+    width: 60px;
+    height: 60px;
+    border: solid black 1px;
+    transition: 0.8s all;
 }
 .inputField {
     width: 246px;
     height: 120px;
-    background-color: darkgrey;
+    background-color: #7FDBFF;
     border: solid black 1px;
 }
 
 .opButton {
-    background-color: darkorange;
+    background-color: #FF851B;
     width: 60px;
     height: 60px;
     border: solid black 1px;
+    transition: 0.6s all;
 }
+
+.opButton:hover {
+    background-color: #F012BE;
+    width: 60px;
+    height: 60px;
+    border: solid black 1px;
+    transition: 0.6s all;
+}
+
 
 .evalButton {
     width: 246px;
     height: 60px;
-    background-color: dodgerblue;
+    background-color: #0074D9;
     border: solid black 1px;
+    transition: 0.6s all;
+}
+
+.evalButton:hover {
+    width: 246px;
+    height: 60px;
+    background-color: #F012BE;
+    border: solid black 1px;
+    transition: 0.6s all;
 }

@@ -28,7 +28,9 @@ class App extends React.Component {
   }
 
   handleOperationClick(value) {
-    this.setState({ operator: value })
+    if (this.state.input != '' && this.state.input2 == '') {
+      this.setState({ operator: value })
+    }
   }
 
   handleResetClick() {
@@ -89,8 +91,8 @@ class App extends React.Component {
         <Button className="opButton" buttonValue=' * ' click={this.handleOperationClick} />
         <Button className="numberButton" buttonValue='0' click={this.handleInputClick} />
         <Button className="opButton" buttonValue='.' click={this.handleInputClick} />
-        <Button className="opButton" buttonValue=' / ' click={this.handleOperationClick} />
         <Button className="opButton" buttonValue='C' click={this.handleResetClick} />
+        <Button className="opButton" buttonValue=' / ' click={this.handleOperationClick} />
         <EvalButton className="evalButton" buttonValue='=' click={this.handleEval} />
       </div>
     )
